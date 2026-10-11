@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Алина Ветрова — SMM-специалист в beauty и lifestyle</title>
+<meta name="description" content="Портфолио Алины Ветровой: junior SMM-специалист, beauty и lifestyle. Два проекта, опыт, навыки и способ связи. Демонстрационные данные.">
+<meta property="og:title" content="Алина Ветрова — SMM-специалист в beauty и lifestyle">
+<meta property="og:description" content="Контент, у которого есть не только эстетика, но и задача. Портфолио: 2 проекта.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23783B46'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23F7F4EF' font-family='Georgia'%3EАВ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;600&display=swap&subset=cyrillic" rel="stylesheet">
+
+<!-- ======================================================================
+     CLIENT CUSTOMIZATION  (всё, что меняется под клиента)
+     ----------------------------------------------------------------------
+     1. Имя, должность, ссылка для связи и пути к фото — объект CONFIG
+        в скрипте ниже (скрипт в самом конце файла).
+     2. Цвета и шрифты — переменные в :root ниже.
+     3. Тексты (заголовок, биография, проекты, метрики, даты, навыки,
+        курс) — обычный текст в HTML. Ищите комментарии «ЗАМЕНИТЬ».
+     4. ДЕМО-ДАННЫЕ: Алина Ветрова, FORMA SKIN, MUSE BEAUTY STUDIO,
+        все цифры, даты периодов, курс и названия инструментов —
+        ВЫМЫШЛЕННЫЕ. Перед публикацией для настоящей клиентки замените
+        их на проверенные данные и уберите пометки «демо».
+     ====================================================================== -->
+<style>
+:root{
+  --bg:#F7F4EF;       /* фон */
+  --ink:#171717;      /* текст */
+  --accent:#783B46;   /* бордовый акцент */
+  --muted:#4A4642;
+  --paper:#E9E3D9;    /* фон пустого места под фото */
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --pad:clamp(20px,5vw,72px);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{font-family:var(--sans);background:var(--bg);color:var(--ink);font-size:clamp(1rem,.96rem + .2vw,1.1rem);line-height:1.65;overflow-x:hidden}
+a{color:inherit}
+img{display:block;max-width:100%}
+img[hidden]{display:none}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{padding:0 var(--pad);max-width:1400px;margin:0 auto}
+.serif{font-family:var(--serif);font-weight:500;letter-spacing:-.02em;line-height:1.02}
+.small{font-size:.82rem;color:var(--muted)}
+.demo{display:inline-block;font-size:.78rem;color:var(--accent);border:1px solid var(--accent);padding:2px 10px;margin-bottom:12px}
+section{padding:clamp(56px,9vw,120px) 0;border-top:1px solid var(--ink)}
+h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,5vw,4.2rem);letter-spacing:-.02em;line-height:1.05;margin-bottom:.7em}
+.btn{display:inline-block;background:var(--accent);color:var(--bg);font-weight:600;text-decoration:none;padding:16px 30px;border:1px solid var(--accent);transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--accent)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* header */
+header{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--ink)}
+.bar{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px 24px;padding-top:12px;padding-bottom:12px}
+.who{font-family:var(--serif);font-size:1.4rem;font-weight:600;text-decoration:none}
+.who span{font-family:var(--sans);font-size:.78rem;font-weight:400;color:var(--muted);margin-left:10px}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 22px;font-size:.92rem}
+nav a{text-decoration:none}
+nav a:hover{color:var(--accent)}
+nav a.cta{color:var(--accent);font-weight:600;border-bottom:1px solid var(--accent)}
+
+/* hero */
+.hero{border-top:0;padding-top:clamp(32px,6vw,80px)}
+.hero-grid{display:grid;gap:40px}
+.hero h1{font-size:clamp(2.4rem,7vw,6.4rem);margin-bottom:.45em}
+.lede{max-width:32em;color:var(--muted);margin-bottom:32px}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;border-top:1px solid var(--ink);padding-top:14px}
+.facts b{display:block;font-family:var(--serif);font-size:clamp(1.3rem,2.6vw,2rem);font-weight:600;line-height:1.1}
+.portrait{position:relative;aspect-ratio:4/5;background:var(--paper);width:100%;max-width:520px;justify-self:end}
+.portrait::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1px solid var(--accent);z-index:0}
+.portrait .box{position:absolute;inset:0;background:var(--paper);z-index:1;overflow:hidden}
+.ph{position:absolute;inset:0;display:grid;place-items:center;text-align:center;padding:16px;color:var(--accent);font-family:var(--serif);font-size:clamp(2.4rem,8vw,5rem);line-height:1}
+.ph small{display:block;font-family:var(--sans);font-size:.78rem;color:var(--muted);margin-top:10px}
+.box img,.slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@media (min-width:900px){.hero-grid{grid-template-columns:1.25fr 1fr;gap:72px;align-items:end}}
+
+/* bio */
+.bio{display:grid;gap:24px}
+.bio p.big{font-family:var(--serif);font-size:clamp(1.4rem,2.6vw,2.2rem);line-height:1.3;max-width:28em}
+@media (min-width:900px){.bio{grid-template-columns:1fr 2fr;gap:72px}}
+
+/* projects */
+.proj{padding:clamp(40px,6vw,80px) 0;border-top:1px solid var(--ink)}
+.proj:first-of-type{border-top:0;padding-top:0}
+.num{font-family:var(--serif);font-size:clamp(5rem,16vw,14rem);line-height:.8;color:var(--accent);margin-bottom:.15em}
+.proj h3{font-family:var(--serif);font-weight:600;font-size:clamp(1.8rem,4vw,3.2rem);letter-spacing:.02em;margin-bottom:6px}
+.meta{color:var(--muted);margin-bottom:28px}
+.p-grid{display:grid;gap:32px}
+.slots{display:grid;gap:16px;align-content:start}
+.slot{position:relative;background:var(--paper);overflow:hidden}
+.slot .ph{font-size:clamp(1.6rem,4vw,2.6rem)}
+.a1{aspect-ratio:4/5}.a2{aspect-ratio:1/1}.a3{aspect-ratio:3/4}.a4{aspect-ratio:16/10}
+figcaption{font-size:.82rem;color:var(--muted);padding-top:6px}
+.case dt{font-weight:600;margin-top:18px;border-top:1px solid currentColor;padding-top:8px}
+.case dd{max-width:36em}
+.case ul{margin:6px 0 0 18px}
+.mini{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:10px}
+.mini b{display:block;font-family:var(--serif);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:600;line-height:1.1}
+.mini span{font-size:.82rem}
+@media (min-width:900px){
+  .p-grid{grid-template-columns:1fr 1fr;gap:72px}
+  .p2 .slots{order:2}
+}
+.p2{background:var(--ink);color:var(--bg);margin:0 calc(-1 * var(--pad));padding-left:var(--pad);padding-right:var(--pad)}
+.p2 .num{color:var(--bg)}
+.p2 .meta,.p2 figcaption,.p2 .small{color:#D6D1C8}
+.p2 .demo{color:var(--bg);border-color:var(--bg)}
+.p2 .slot,.p2 .slot .ph{background:#2A2A2A;color:var(--bg)}
+.p2 .slot .ph small{color:#D6D1C8}
+
+/* experience */
+.tl{list-style:none;border-left:1px solid var(--accent);margin-left:6px;display:grid;gap:36px}
+.tl li{position:relative;padding-left:28px;max-width:44em}
+.tl li::before{content:"";position:absolute;left:-6px;top:.55em;width:11px;height:11px;border-radius:50%;background:var(--bg);border:1px solid var(--accent)}
+.tl time{display:block;font-size:.85rem;color:var(--accent);font-weight:600}
+.tl h3{font-family:var(--serif);font-size:1.7rem;font-weight:600;line-height:1.15;margin:2px 0 4px}
+
+/* metrics */
+.metrics{display:grid;gap:0;border-top:1px solid var(--ink)}
+.m{display:grid;gap:4px;padding:22px 0;border-bottom:1px solid var(--ink)}
+.m b{font-family:var(--serif);font-size:clamp(3rem,9vw,6.5rem);font-weight:500;line-height:.95;color:var(--accent)}
+.m p{max-width:22em}
+@media (min-width:768px){.metrics{grid-template-columns:1fr 1fr;column-gap:56px}}
+@media (min-width:1100px){.metrics{grid-template-columns:repeat(4,1fr);column-gap:32px}.m{border-bottom:0;padding-bottom:0}}
+.note{margin-top:24px;max-width:46em}
+
+/* skills */
+.sk{display:grid;gap:48px}
+.sk h3{font-family:var(--serif);font-size:1.9rem;font-weight:600;margin-bottom:8px}
+.sk dl{border-top:1px solid var(--ink)}
+.sk dt{font-weight:600;margin-top:16px}
+.sk dd{color:var(--muted);padding-bottom:16px;border-bottom:1px solid rgba(23,23,23,.2);max-width:34em}
+.train{margin-top:40px}
+@media (min-width:900px){.sk{grid-template-columns:1fr 1fr;gap:72px}}
+
+/* contact + footer */
+.contact h2{font-size:clamp(2.2rem,7vw,6rem);max-width:12em}
+.contact p{max-width:30em;margin-bottom:28px}
+footer{border-top:1px solid var(--ink);padding:24px 0 32px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a class="who" href="#top"><span class="n" data-fill="name">Алина Ветрова</span><span data-fill="role">SMM-специалист</span></a>
+    <nav aria-label="Основная навигация">
+      <ul>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#experience">Опыт</a></li>
+        <li><a href="#skills">Навыки</a></li>
+        <li><a class="cta" href="#contact">Связаться</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <!-- ЗАМЕНИТЬ: заголовок -->
+      <h1 class="serif">Создаю контент, у которого есть не только эстетика, но&nbsp;и&nbsp;задача.</h1>
+      <!-- ЗАМЕНИТЬ: направление и описание -->
+      <p class="lede">Развиваю контент для beauty- и lifestyle-брендов: соединяю бережный сторителлинг с продуманным планированием и разбором результатов.</p>
+      <!-- ЗАМЕНИТЬ: три факта (срок опыта, число проектов, направление) -->
+      <div class="facts">
+        <div><b>1 год</b>в SMM</div>
+        <div><b>2 проекта</b>в портфолио</div>
+        <div><b>Beauty &amp; lifestyle</b>направление</div>
+      </div>
+    </div>
+    <figure class="portrait">
+      <div class="box">
+        <div class="ph" aria-hidden="true">АВ<small>Здесь будет портрет:<br>images/alina-portrait.jpg</small></div>
+        <!-- ЗАМЕНА ФОТО: путь задаётся в CONFIG.portrait -->
+        <img data-img="portrait" src="images/alina-portrait.jpg" alt="Портрет Алины Ветровой" width="800" height="1000" fetchpriority="high" onerror="this.hidden=true">
+      </div>
+    </figure>
+  </div>
+</section>
+
+<!-- BIO -->
+<section>
+  <div class="wrap bio">
+    <h2>Немного обо мне</h2>
+    <!-- ЗАМЕНИТЬ: биография (50–80 слов) -->
+    <p class="big">Мне интересно понимать характер бренда и находить в нём свой угол: что стоит рассказать и как это увидит аудитория. Beauty и lifestyle привлекают вниманием к деталям: тон, визуальный язык, ожидания людей, особенности продукта. Ценю ясную коммуникацию, продуманное исполнение и привычку смотреть на цифры публикаций, чтобы следующие получались лучше.</p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <h2>Избранные проекты</h2>
+
+    <!-- ПРОЕКТ 01. ДЕМО: вымышленный бренд. Замените названия, тексты и цифры. -->
+    <article class="proj">
+      <div class="num" aria-hidden="true">01</div>
+      <div class="p-grid">
+        <div>
+          <span class="demo">Вымышленный бренд, демонстрационный проект</span>
+          <h3>FORMA SKIN</h3>
+          <p class="meta">Уход за кожей и косметика · Роль: junior SMM-специалист</p>
+          <dl class="case">
+            <dt>Контекст</dt><dd>Условный бренд ухода за кожей. Продукты в соцсетях подаются по-разному, а польза из публикаций считывается с трудом.</dd>
+            <dt>Задача</dt><dd>Выстроить узнаваемую подачу и сделать рассказ о продуктах понятнее.</dd>
+            <dt>Мой вклад</dt><dd>Контент-план, разработка рубрик, тексты, креативные референсы, визуальное направление соцсетей, базовый анализ публикаций.</dd>
+            <dt>Примеры контента</dt>
+            <dd><ul>
+              <li>Рубрика «Состав без тайн»: один ингредиент, одна карточка.</li>
+              <li>Серия «Утро и вечер»: ритуал ухода по шагам.</li>
+              <li>Короткое видео: текстура продукта и один главный тезис.</li>
+            </ul></dd>
+            <dt>Результаты (демо-цифры)</dt>
+            <dd><div class="mini">
+              <div><b>24</b><span>публикации за 8 недель</span></div>
+              <div><b>+18%</b><span>сохранений на публикацию, последние 4 недели к первым 4</span></div>
+              <div><b>3</b><span>рубрики</span></div>
+            </div></dd>
+            <dt>Что я поняла</dt><dd>Рубрика с чётким вопросом работает лучше красивого поста без задачи.</dd>
+          </dl>
+        </div>
+        <div class="slots">
+          <!-- ЗАМЕНА ФОТО: пути в CONFIG.forma1 и CONFIG.forma2. Это концептуальные визуалы, не реальные кампании. -->
+          <figure><div class="slot a1"><div class="ph" aria-hidden="true">FORMA<small>images/forma-skin-01.jpg</small></div><img data-img="forma1" src="images/forma-skin-01.jpg" alt="Концептуальный визуал для FORMA SKIN: карточка с ингредиентом" loading="lazy" onerror="this.hidden=true"></div><figcaption>Концепт: карточка рубрики «Состав без тайн»</figcaption></figure>
+          <figure><div class="slot a2"><div class="ph" aria-hidden="true">SKIN<small>images/forma-skin-02.jpg</small></div><img data-img="forma2" src="images/forma-skin-02.jpg" alt="Концептуальный визуал для FORMA SKIN: серия «Утро и вечер»" loading="lazy" onerror="this.hidden=true"></div><figcaption>Концепт: серия «Утро и вечер»</figcaption></figure>
+        </div>
+      </div>
+    </article>
+
+    <!-- ПРОЕКТ 02. ДЕМО: вымышленный бренд. -->
+    <article class="proj p2">
+      <div class="num" aria-hidden="true">02</div>
+      <div class="p-grid">
+        <div>
+          <span class="demo">Вымышленный бренд, демонстрационный проект</span>
+          <h3>MUSE BEAUTY STUDIO</h3>
+          <p class="meta">Студия ухода и услуги · Роль: junior SMM-специалист</p>
+          <dl class="case">
+            <dt>Контекст</dt><dd>Условная студия ухода. Клиентам непросто понять, чем услуги отличаются и что входит в процедуру.</dd>
+            <dt>Задача</dt><dd>Объяснить услуги и вызвать содержательное взаимодействие с аудиторией.</dd>
+            <dt>Мой вклад</dt><dd>Контент-план, объяснение услуг, контент под вопросы аудитории, концепции Reels, подписи, базовая аналитика.</dd>
+            <dt>Примеры контента</dt>
+            <dd><ul>
+              <li>Карточки «Что входит в процедуру».</li>
+              <li>Reels «Один день в кабинете»: три кадра и вопрос аудитории.</li>
+              <li>Серия ответов на частые вопросы клиентов.</li>
+            </ul></dd>
+            <dt>Результаты (демо-цифры)</dt>
+            <dd><div class="mini">
+              <div><b>18</b><span>публикаций за 6 недель</span></div>
+              <div><b>6</b><span>концепций коротких видео</span></div>
+              <div><b>2</b><span>контент-направления</span></div>
+            </div></dd>
+            <dt>Что я поняла</dt><dd>Вопрос в конце подписи работает, когда он связан с услугой. Общие вопросы почти не получают ответов.</dd>
+          </dl>
+        </div>
+        <div class="slots">
+          <!-- ЗАМЕНА ФОТО: пути в CONFIG.muse1 и CONFIG.muse2. -->
+          <figure><div class="slot a3"><div class="ph" aria-hidden="true">MUSE<small>images/muse-beauty-01.jpg</small></div><img data-img="muse1" src="images/muse-beauty-01.jpg" alt="Концептуальный визуал для MUSE BEAUTY STUDIO: карточка услуги" loading="lazy" onerror="this.hidden=true"></div><figcaption>Концепт: карточка «Что входит в процедуру»</figcaption></figure>
+          <figure><div class="slot a4"><div class="ph" aria-hidden="true">STUDIO<small>images/muse-beauty-02.jpg</small></div><img data-img="muse2" src="images/muse-beauty-02.jpg" alt="Концептуальный визуал для MUSE BEAUTY STUDIO: кадр из Reels" loading="lazy" onerror="this.hidden=true"></div><figcaption>Концепт: кадр для Reels «Один день в кабинете»</figcaption></figure>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <h2>Опыт</h2>
+    <span class="demo">Демонстрационные данные и даты</span>
+    <!-- ЗАМЕНИТЬ: этапы и даты -->
+    <ol class="tl">
+      <li><time>Окт 2025 – Дек 2025</time><h3>Первые проекты</h3><p>Училась превращать бриф в понятную структуру контента.</p></li>
+      <li><time>Янв 2026 – Июн 2026</time><h3>Самостоятельная работа с контентом</h3><p>Планировала публикации, писала тексты, готовила референсы и согласовывала правки.</p></li>
+      <li><time>Июл 2026 – Сен 2026</time><h3>Анализ и развитие</h3><p>Сравнивала показатели публикаций и использовала выводы в следующих.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- METRICS -->
+<section>
+  <div class="wrap">
+    <h2>Результаты в цифрах</h2>
+    <span class="demo">Иллюстративные демо-метрики, не реальные результаты клиентов</span>
+    <!-- ЗАМЕНИТЬ: значения и пояснения. Указывайте, что и с чем сравнивается. -->
+    <div class="metrics">
+      <div class="m"><b>42</b><p>публикации подготовлено и выпущено в двух проектах</p></div>
+      <div class="m"><b>+18%</b><p>сохранений на публикацию в FORMA SKIN: последние 4 недели к первым 4</p></div>
+      <div class="m"><b>2</b><p>контент-направления разработано</p></div>
+      <div class="m"><b>6</b><p>концепций коротких видео протестировано в MUSE BEAUTY STUDIO</p></div>
+    </div>
+    <p class="note small">Результат зависит от стартовой точки, аудитории, частоты публикаций, бюджета и других факторов. Цифры не обещают такого же эффекта в другом проекте.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <h2>Как я работаю</h2>
+    <div class="sk">
+      <div>
+        <h3>Рабочие компетенции</h3>
+        <dl>
+          <dt>Контекстное мышление</dt><dd>Понимаю, почему одно сообщение для разных брендов и аудиторий нужно подавать по-разному.</dd>
+          <dt>Аргументация решений</dt><dd>Объясняю причины контентных решений, а не опираюсь только на личный вкус.</dd>
+          <dt>Работа с обратной связью</dt><dd>Уточняю комментарии и превращаю их в конкретные правки.</dd>
+          <dt>Самостоятельность в задачах</dt><dd>Нахожу недостающую информацию, задаю нужные вопросы и двигаю работу вперёд.</dd>
+        </dl>
+      </div>
+      <div>
+        <h3>Практические навыки</h3>
+        <dl>
+          <dt>Контентная архитектура</dt><dd>Рубрики, повторяющиеся форматы, редакционный план.</dd>
+          <dt>Редактура Tone of Voice</dt><dd>Единый голос бренда в разных форматах соцсетей.</dd>
+          <dt>Копирайтинг</dt><dd>Подписи, зацепки, объяснения продукта, призывы к действию.</dd>
+          <dt>Концепции коротких видео</dt><dd>Раскадровки, зацепки, списки кадров, адаптация форматов.</dd>
+          <dt>Аналитика контента</dt><dd>Охват, сохранения, репосты, переходы в профиль и другие показатели.</dd>
+        </dl>
+        <!-- ЗАМЕНИТЬ: инструменты (демо) -->
+        <p class="small" style="margin-top:16px">Инструменты (демо): Figma, Canva, встроенная аналитика соцсетей.</p>
+      </div>
+    </div>
+    <!-- ЗАМЕНИТЬ: курс (демо) -->
+    <p class="train small">Обучение: «Контент-стратегия для социальных сетей — практический курс» (вымышленный пример).</p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Давайте обсудим ваш проект</h2>
+    <p>Если вам нужен SMM-специалист в команду или помощник на проект, напишите мне. Расскажу, как бы я подошла к задаче.</p>
+    <!-- ССЫЛКА: меняется в CONFIG.contact -->
+    <a class="btn" data-tg href="https://t.me/your_username" target="_blank" rel="noopener">Связаться со мной</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap small">
+    <span data-fill="name">Алина Ветрова</span>. Демонстрационное портфолио: персона, бренды, цифры и курс вымышлены.
+  </div>
+</footer>
+
+<script>
+/* ===== CLIENT CUSTOMIZATION: меняйте только текст в кавычках ===== */
+var CONFIG = {
+  name: "Алина Ветрова",
+  role: "SMM-специалист",
+  contact: "https://t.me/your_username",   /* ссылка для связи: заменить */
+  portrait: "images/alina-portrait.jpg",
+  forma1: "images/forma-skin-01.jpg",
+  forma2: "images/forma-skin-02.jpg",
+  muse1: "images/muse-beauty-01.jpg",
+  muse2: "images/muse-beauty-02.jpg"
+};
+/* ===== дальше код менять не нужно ===== */
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll("[data-fill]").forEach(function (el) { el.textContent = CONFIG[el.dataset.fill]; });
+  document.querySelectorAll("[data-tg]").forEach(function (el) { el.href = CONFIG.contact; });
+  document.querySelectorAll("[data-img]").forEach(function (el) { el.src = CONFIG[el.dataset.img]; });
+});
+</script>
+</body>
+</html>
